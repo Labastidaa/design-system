@@ -1,0 +1,132 @@
+import { Meta } from '@storybook/blocks';
+import React from 'react';
+import Colors  from "@/components/Colors/Colors"
+import {Button}  from "@/components/ui/button/Button"
+import TypographySection  from "@/components/pages/design-system/TypographySection"
+import classnames from "./documentation.module.css"
+import github from "/githubw.svg"
+import figma from "/Figma-Icon.svg"
+
+<Meta title="Documentation" />
+# Documentation
+
+## Getting Started
+Collection of **UI components** implementing a **Design system** in **React** using Tailwind and pure CSS.
+
+**Storybook** as workshop to build UI components and pages in isolation.
+- Development
+- Testing
+- Documentation
+
+<a
+  href="https://www.figma.com/design/BH9MEJLxx06oaENGpqkfwK/Design-System?node-id=0-1&t=c0snvjdh0EpwdAqk-1"
+  target="_blank"
+  class={classnames.link}
+>
+    <img src={figma} alt="Gituhb" class={classnames.icon}/>
+    <span class={classnames.text}>Figma Design System</span>
+</a>
+<a
+  href="https://github.com/Labastidaa/design_system"
+  target="_blank"
+  class={classnames.link}
+>
+    <img src={github} alt="Gituhb" class={classnames.icon}/>
+    <span class={classnames.text}>View Github Repository</span>
+</a>
+
+  
+
+
+## Design Tokens
+The UI component collection uses the following Design Tokens
+
+# Colors
+<Colors/>
+
+# Typography
+<div>
+  <h3>Modular scale: Major Third Scale</h3>
+  <div>Source modular scale: <a href="https://www.modularscale.com/?16&px&1.250">https://www.modularscale.com/?16&px&1.250</a></div>
+
+  <p>Base 16px (headers) 24+ line-height 1.15 Ratio 1.250</p>
+  
+  <ul>
+    <li>Size: 10px LineHeight: 16px - <span style={{ fontSize: '10px', lineHeight: '16px' }}>Lorem ipsum</span></li>
+    <li>Size: 12px LineHeight: 20px - <span style={{ fontSize: '12px', lineHeight: '20px' }}>Lorem ipsum</span></li>
+    <li>Size: 16px LineHeight: 24px - <span style={{ fontSize: '16px', lineHeight: '24px' }}>Lorem ipsum</span></li>
+    <li>Size: 20px LineHeight: 28px - <span style={{ fontSize: '20px', lineHeight: '28px' }}>Lorem ipsum</span></li>
+    <li>Size: 24px LineHeight: 28px - <span style={{ fontSize: '24px', lineHeight: '28px' }}>Lorem ipsum</span></li>
+    <li>Size: 32px LineHeight: 36px - <span style={{ fontSize: '32px', lineHeight: '36px' }}>Lorem ipsum</span></li>
+    <li>Size: 40px LineHeight: 44px - <span style={{ fontSize: '40px', lineHeight: '44px' }}>Lorem ipsum</span></li>
+    <li>Size: 48px LineHeight: 56px - <span style={{ fontSize: '48px', lineHeight: '56px' }}>Lorem ipsum</span></li>
+    <li>Size: 60px LineHeight: 68px - <span style={{ fontSize: '60px', lineHeight: '68px' }}>Lorem ipsum</span></li>
+  </ul>
+
+</div>
+
+# Spacing
+<div className='flex flex-col'>
+  <p>Size and Spacing scale in **4pt** increments</p>
+  <div className='flex gap-[8px]'>
+  4
+  8
+  12
+  16
+  20
+  24
+  28
+  32
+  36
+  40
+  44
+  48
+  52
+  56
+  60
+  64
+  68
+  72
+  76
+  80
+  84
+  88
+  92
+  96
+  100
+  </div>
+  <div 
+    className='flex w-full h-full'
+    style={{display:"flex", flexDirection: "row", gap:"4px", padding: "4px", width: "100%", height: "100%"}}
+  > 
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"4px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"8px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"12px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"16px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"20px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"24px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"28px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"32px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"36px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"40px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"44px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"48px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"52px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"56px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"60px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"64px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"68px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"72px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"76px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"80px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"84px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"88px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"92px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"96px", height:"20px"}}/>
+    <div style={{backgroundColor: "hsl(0, 0%, 100%)", color:"hsl(0,0%,0%)", width:"100px", height:"20px"}}/>
+
+  </div>  
+</div>
+
+
+

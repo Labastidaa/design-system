@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0, 0%, 8%;
+    --foreground: 0, 0%, 84%;
+    --foreground_hover: 0, 0%, 92%;
+
+    /* ==================== BASE COLORS ====================== */
+    /* Primary Colors */
+    --primary-100: #e6eef5;
+    --primary-90: #b0cbe1;
+    --primary-80: #8ab2d2;
+    --primary-70: #548ebe;
+    --primary-60: #3379b1;
+    --primary-50: #00579e;
+    --primary-40: #004f90;
+    --primary-30: #003e70;
+    --primary-20: #003057;
+    --primary-10: #002442;
+    --primary-05: #001323;
+    --primary-03: #000910;
+
+    /* Secondary Colors */
+    --secondary-100: #ebeef0;
+    --secondary-90: #c1c9d0;
+    --secondary-80: #a3afb9;
+    --secondary-70: #798a99;
+    --secondary-60: #5f7485;
+    --secondary-50: #375167;
+    --secondary-40: #324a5e;
+    --secondary-30: #273a49;
+    --secondary-20: #1e2d39;
+    --secondary-10: #17222b;
+    --secondary-05: hsl(210, 31%, 5%);
+
+    /* Colores Auxiliares */
+    --red-100: #f5e6e6;
+    --red-90: #f1b0b0;
+    --red-80: #d28a8a;
+    --red-70: #be5454;
+    --red-60: #b13333;
+    --red-50: #9e0000;
+    --red-40: #900000;
+    --red-30: #700000;
+    --red-20: #570000;
+    --red-10: #420000;
+    --red-05: #1a0000;
+
+    --yellow-100: #f7f3e6;
+    --yellow-90: #e7d9b0;
+    --yellow-80: #dcc68a;
+    --yellow-70: #ccac54;
+    --yellow-60: #c29c33;
+    --yellow-50: #b38300;
+    --yellow-40: #a37700;
+    --yellow-30: #7f5d00;
+    --yellow-20: #624800;
+    --yellow-10: #4b3700;
+    --yellow-05: #1a1300;
+
+    --green-100: #eaf5e6;
+    --green-90: #bde1b0;
+    --green-80: #9dd28a;
+    --green-70: #70be54;
+    --green-60: #55b133;
+    --green-50: #2a9e00;
+    --green-40: #269000;
+    --green-30: #1e7000;
+    --green-20: #175700;
+    --green-10: #124200;
+    --green-05: #071a00;
+
+    /* Neutral */
+    --neutral-100: #ffffff;
+    --neutral-96: #f5f5f5;
+    --neutral-92: #ebebeb;
+    --neutral-88: #e0e0e0;
+    --neutral-84: #d5d5d5;
+    --neutral-70: #c1c1c1;
+    --neutral-60: #a5a5a5;
+    --neutral-50: #949494;
+    --neutral-40: #666666;
+    --neutral-30: #4d4d4d;
+    --neutral-20: hsl(0, 0%, 20%);
+    --neutral-16: hsl(0, 0%, 16%);
+    --neutral-12: hsl(0, 0%, 12%);
+    --neutral-08: hsl(0, 0%, 8%);
+    --neutral-00: #000000;
+
+    /* ==================== UTILITY COLORS ====================== */
+    --primary: var(--primary-50);
+    --primary-hover: var(--primary-30);
+    --primary-foreground: var(--neutral-100);
+
+    --secondary: var(--secondary-50);
+    --secondary-hover: var(--secondary-30);
+    --secondary-foreground: var(--neutral-100);
+
+    --destructive: var(--red-50);
+    --destructive-hover: var(--red-30);
+    --destructive-foreground: var(--neutral-100);
+
+    --disabled: 0 0% 50%;
+    --disabled-foreground: 0 0% 30%;
+
+    --muted: 0 0% 50%;
+    --border_color: 0 0% 20%;
+    --radius-8: 0.5rem;
+    --radius-12: 0.8rem;
+    --radius-20: 1.25rem;
+  }
+
+  .light {
+    --background: 0 0% 96%;
+    --foreground: 0 0% 8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border_color;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1 {
+    @apply text-4xl font-semibold;
+  }
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+  h4 {
+    @apply text-xl font-semibold;
+  }
+  p {
+    @apply text-base;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Apply to the parent container */
+.snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; /* or any height that makes sense for your layout */
+}
+
+/* Apply to child elements */
+.snap-child {
+  scroll-snap-align: start; /* or center, end */
+}
+
+.animate-translate-x {
+  transform: translateX(-200px);
+  opacity: 1;
+  transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s";
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.gradient {
+  background: linear-gradient(
+    160deg,
+    hsl(207, 100%, 28%) 0%,
+    rgb(84, 142, 190) 100%
+  );
+}
+
+.gradient-225 {
+  background: linear-gradient(
+    325deg,
+    hsl(207, 100%, 28%) 0%,
+    hsl(207, 45%, 54%) 100%
+  );
+}
+
+.gradient-250 {
+  background: linear-gradient(
+    325deg,
+    hsl(207, 100%, 95%) 0%,
+    hsl(207, 100%, 8%) 100%
+  );
+}
+
+.gradient-300 {
+  background: linear-gradient(
+    325deg,
+    hsl(207, 100%, 31%) 0%,
+    hsl(207, 55%, 45%) 100%
+  );
+}
+
+.grid-template {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+}
+
+.container-gradient-to-b {
+  background-image: linear-gradient(
+    to bottom,
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 8%, 30)
+  );
+}
+
+.scroller {
+  max-width: 100%;
+}
+
+.scroller__inner {
+  padding-block: 0.5rem;
+  display: flex;
+  flex-wrap:nowrap;
+  gap: 0.5rem;
+}
+
+.scroller.animated {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller.animated .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller.animated .scroller__inner:hover {
+  animation-play-state: paused;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+/* @keyframes scroll */
+/* Each carousel item should have a fixed width and gap between them */
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+#window {
+  filter: drop-shadow(-2px -2px 0.5rem rgb(0,0,0,0.3))
+}

@@ -1,0 +1,29 @@
+.link {
+  display: flex;
+  height: fit-content;
+  padding-bottom: 16px;
+  justify-items: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.text {
+  color: #e0e0e0;
+}
+
+.text:hover {
+  color: #ffffff;
+}
+
+.container {
+  margin-bottom: 24px;
+  gap: 40px;
+  border: 1px solid #000;
+}
+
+.icon {
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+}
