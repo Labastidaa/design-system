@@ -1,7 +1,7 @@
 import { ApiResponse } from "@/types";
 
 // Backend URL based on the node environment 
-const backendUrl = process.env.NODE_ENV === "development" || process.env.NODE_ENV === "test"
+const backendUrl = process.env.NODE_ENV === "development"
 ? "http://localhost:8081/api/crypto"
 : "https://production-backend-url/api/crypto";
 

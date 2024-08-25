@@ -176,7 +176,7 @@ export const mockResponse: ApiResponse = {
 };
 
 export const handlers = [
-  http.get("/api/crypto", async () => {
+  http.get("http://localhost:8081/api/crypto", async () => {
     return HttpResponse.json(mockResponse);
   }),
 ];
