@@ -1,7 +1,9 @@
 import { ApiResponse } from "@/types";
 
-// Backend URL based on the current origin
-const backendUrl = `${window.location.origin}/api/crypto`
+// Backend URL based on the node environment 
+const backendUrl = process.env.NODE_ENV === "development" || process.env.NODE_ENV === "test"
+? "http://localhost:8081/api/crypto"
+: "https://production-backend-url/api/crypto";
 
 const headers = new Headers();
 headers.append("Accept", "application/json");

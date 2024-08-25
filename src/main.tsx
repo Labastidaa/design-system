@@ -19,20 +19,13 @@ const rootElement = document.getElementById("app")!;
 const root = ReactDOM.createRoot(rootElement);
 
 async function start() {
-  if (process.env.NODE_ENV !== "development") {
-    return;
-  }
-  if (typeof window !== "undefined") {
+  if (process.env.NODE_ENV === "development" && typeof window !== "undefined") {
     // We are in the browser
     const { worker } = await import("./mocks/browser");
     return worker.start();
-  } else {
+  } else if (process.env.NODE_ENV === "test") {
     // We are in Node.js (e.g., SSR or testing)
     const { server } = await import("./mocks/node");
-    server.events.on("request:start", ({ request }) => {
-      console.log("MSW intercepted:", request.method, request.url);
-    });
-
     return server.listen();
   }
 }

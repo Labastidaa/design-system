@@ -6,7 +6,7 @@ const LoginCard = () => {
       <div className="">
         <h3>Log in</h3>
         <p className="text-muted">
-          Dont have and account?
+          Dont have an account?
           <span className="pl-8 underline">
             <a href="">Sign up</a>
           </span>
@@ -31,7 +31,7 @@ const LoginCard = () => {
         </div>
         <div className="flex items-center justify-between">
           <div className="flex gap-8">
-            <input type="checkbox" checked />
+            <input type="checkbox" checked readOnly />
             <p>Remember me</p>
           </div>
           <p className="text-sm">Forgot Password?</p>
