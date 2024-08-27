@@ -171,6 +171,38 @@ export const mockResponse: ApiResponse = {
           last_updated: new Date().toISOString()
         }
       }
+    },
+    {
+      id: 5,
+      name: 'TRON',
+      symbol: 'TRON',
+      slug: 'trx',
+      cmc_rank: 2,
+      num_market_pairs: 4000,
+      circulating_supply: 115000000,
+      total_supply: 0,
+      max_supply: 0,
+      infinite_supply: false,
+      last_updated: new Date().toISOString(),
+      date_added: '2015-08-07T00:00:00.000Z',
+      tags: ['smart-contract', 'pos'],
+      platform: null,
+      self_reported_circulating_supply: null,
+      self_reported_market_cap: null,
+      quote: {
+        USD: {
+          price: 4000,
+          volume_24h: 1500000000,
+          volume_change_24h: 1.2,
+          percent_change_1h: 0.2,
+          percent_change_24h: 0.4,
+          percent_change_7d: 2.5,
+          market_cap: 460000000000,
+          market_cap_dominance: 10,
+          fully_diluted_market_cap: 460000000000,
+          last_updated: new Date().toISOString()
+        }
+      }
     }
   ]
 };

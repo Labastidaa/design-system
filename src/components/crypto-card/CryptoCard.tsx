@@ -28,7 +28,7 @@ const cryptoIcons: { [key: string]: string } = {
   USDC: usdcSVG,
   XRP: xrpSVG,
   TON: toncoinSVG,
-  TRON: troncoinSVG,
+  TRX: troncoinSVG,
   DOGE: dogecoinSVG,
   ADA: cardanoSVG,
 };
