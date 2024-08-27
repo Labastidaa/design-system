@@ -7,6 +7,7 @@ import solanaSVG from "/solana.svg";
 import usdcSVG from "/usdc.svg";
 import xrpSVG from "/xrp.svg";
 import toncoinSVG from "/toncoin.svg";
+import troncoinSVG from "/tron-trx.svg";
 import dogecoinSVG from "/dogecoin.svg";
 import cardanoSVG from "/cardano.svg";
 import USDFormatter from "../../lib/USDFormatter";
@@ -27,6 +28,7 @@ const cryptoIcons: { [key: string]: string } = {
   USDC: usdcSVG,
   XRP: xrpSVG,
   TON: toncoinSVG,
+  TRON: troncoinSVG,
   DOGE: dogecoinSVG,
   ADA: cardanoSVG,
 };
