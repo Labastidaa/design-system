@@ -54,9 +54,6 @@ export const useAnimateInView = () => {
     if (isInView && !hasAnimatedRef.current) {
       enterAnimation();
     }
-
-    console.log("isInView", isInView);
-    console.log("hasAnimatedRef", hasAnimatedRef);
   }, [isInView, enterAnimation]);
 
   return { scope };
