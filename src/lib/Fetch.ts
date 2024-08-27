@@ -3,7 +3,7 @@ import { ApiResponse } from "@/types";
 // Backend URL based on the node environment 
 const backendUrl = process.env.NODE_ENV === "development"
 ? "http://localhost:8081/api/crypto"
-: "https://production-backend-url/api/crypto";
+: import.meta.env.BACKENDURL;
 
 const headers = new Headers();
 headers.append("Accept", "application/json");
